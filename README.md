@@ -43,9 +43,9 @@ The application should now be running on http://localhost:3000.
 
 To create a production build of the project, run:
 
-\```bash
+```bash
 yarn build
-\```
+```
 
 The optimized build will be created in the ./out directory.
 
