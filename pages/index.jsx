@@ -1,12 +1,12 @@
 // pages/index.js
 
 import React from 'react';
-import Header from '../components/Header';
+import LandingPage from '../components/LandingPage';
 import Section from '../components/Section';
 
 const Home = () => (
   <main>
-    <Header />
+    <LandingPage />
     <div id="home-content" className="home-content">
     <Section
         id="about"
