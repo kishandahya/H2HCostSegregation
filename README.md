@@ -1,6 +1,6 @@
 # Hotel Cost Segregation Services
 
-A React and Next.js-based web application showcasing hotel cost segregation services, helping hotel owners maximize tax savings and improve cash flow.
+A Next.js-based web application showcasing hotel cost segregation services, helping hotel owners maximize tax savings and improve cash flow.
 
 ## Features
 
