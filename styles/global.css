@@ -1,0 +1,65 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-content {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: white;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* MUI Overrides */
+nav .nav-items {
+  display: flex;
+  gap: 16px;
+}
+
+nav .cta {
+  margin-left: auto;
+}
+
+nav .logo {
+  margin-right: auto;
+  flex-grow: 1;
+}
