@@ -60,12 +60,29 @@ const Navbar = () => {
   const renderNavList = () => (
     <List>
       {leftNavLinks.concat(rightNavLinks).map((link) => (
-        <ListItem button key={link.text} onClick={toggleDrawer(false)}>
-          <ListItemText primary={renderNavLink(link)} />
-        </ListItem>
+        <Link key={link.text} href={link.href} passHref>
+          <ListItem
+            button
+            onClick={toggleDrawer(false)}
+            sx={{
+              "&:hover": {
+                backgroundColor: "#f4c150", // Yellow color on hover
+              },
+              "& .MuiTypography-root": {
+                color: "white",
+              },
+              "&:hover .MuiTypography-root": {
+                color: "black",
+              },
+            }}
+          >
+            <ListItemText primary={link.text} />
+          </ListItem>
+        </Link>
       ))}
     </List>
   );
+
 
   return (
     <div className="container">
@@ -94,7 +111,7 @@ const Navbar = () => {
             <Link href="/contact-us" passHref>
               <Button variant="outlined" component="div" style={buttonStyle}>
                 Get Started
-            </Button>
+              </Button>
             </Link>
           </Box>
         </Toolbar>
@@ -104,7 +121,7 @@ const Navbar = () => {
           onClose={toggleDrawer(false)}
           sx={{
             "& .MuiDrawer-paper": {
-              backgroundColor: "#3f51b5", // Same as AppBar default background color
+              backgroundColor: "#333", // Same as AppBar default background color
               color: "white", // Same as AppBar default text color
             },
           }}
