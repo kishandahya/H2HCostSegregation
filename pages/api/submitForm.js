@@ -3,6 +3,7 @@
 import { google } from "googleapis";
 import fs from "fs";
 import path from "path";
+import { getGoogleCredentials } from "../../getGoogleCredentials"
 
 const handler = async (req, res) => {
 
@@ -12,9 +13,7 @@ const handler = async (req, res) => {
         const { email, name, phone, properties, message } = req.body;
 
         try {
-            // Read Google credentials from JSON file
-            const googleCredentialsPath = path.resolve(process.cwd(), "google-credentials.json");
-            const googleCredentials = JSON.parse(fs.readFileSync(googleCredentialsPath, "utf-8"));
+            const googleCredentials = getGoogleCredentials();
 
             // Set up Google Sheets API credentials
             const auth = new google.auth.GoogleAuth({
