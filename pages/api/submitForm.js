@@ -8,8 +8,6 @@ import { getGoogleCredentials } from "../../getGoogleCredentials"
 const handler = async (req, res) => {
 
     if (req.method === "POST") {
-
-
         const { email, name, phone, properties, message } = req.body;
 
         try {

@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/system";
 import Link from "next/link";
+import BlockContent from "@sanity/block-content-to-react"; // Add this import
 
 const Section = ({
   id,
@@ -61,7 +62,7 @@ const Section = ({
                 {title}
               </Typography>
             </Box>
-            <Typography paragraph>{text}</Typography>
+            <BlockContent blocks={text} />
             <Box textAlign="center">
               <Button
                 variant="contained"
