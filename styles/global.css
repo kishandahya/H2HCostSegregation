@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,4 +20,6 @@ body {
   margin: 2rem auto;
   text-align: center;
 }
-
+.container {
+  flex: 1;
+}

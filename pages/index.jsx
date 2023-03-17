@@ -1,14 +1,14 @@
 // pages/index.js
 
-import React from 'react';
-import LandingPage from '../components/LandingPage';
-import Section from '../components/Section';
+import React from "react";
+import LandingPage from "../components/LandingPage";
+import Section from "../components/Section";
 
 const Home = () => (
   <main>
     <LandingPage />
     <div id="home-content" className="home-content">
-    <Section
+      <Section
         id="about"
         title="About Us"
         imageSrc="/assets/hotelexterior.jpg"

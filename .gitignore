@@ -6,3 +6,5 @@ _document.js
 yarn-error.log
 vite.config.js
 node_modules/*
+.vscode/
+google-credentials.json
